@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 100%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 243 75% 59%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 244 58% 51%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --radius: 1.5rem;
+    --accent-rgb: 79, 70, 229;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.glass {
+  @apply backdrop-blur-xl border border-border bg-card/40;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.terminal-mockup {
+  @apply bg-[#1e1e2e] rounded-xl overflow-hidden font-mono shadow-2xl border border-border/50;
+}
+
+.terminal-header {
+  @apply bg-[#181825] px-4 py-3 flex gap-2 items-center;
+}
+
+.terminal-body {
+  @apply p-6 text-sm text-[#a6adc8] leading-relaxed;
+}
+
+.prompt {
+  @apply text-[#89b4fa];
+}
+
+.command {
+  @apply text-[#f5e0dc];
+}
+
+.output {
+  @apply text-[#94e2d5];
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}

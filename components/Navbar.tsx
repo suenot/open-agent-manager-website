@@ -3,13 +3,14 @@
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Github } from 'lucide-react';
+import { Logo } from './Logo';
 
 export function Navbar() {
     return (
         <nav className="fixed top-0 inset-x-0 z-50 bg-background/50 backdrop-blur-lg border-b border-border/50">
             <div className="container mx-auto px-4 h-20 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-3 group">
-                    <img src="/logo.svg" alt="Open Agent Manager Logo" className="w-10 h-10 group-hover:scale-110 transition-transform" />
+                    <Logo className="w-10 h-10 group-hover:scale-110 transition-transform" />
                     <span className="text-xl font-black tracking-tighter">Open Agent Manager</span>
                 </Link>
 

@@ -1,31 +1,14 @@
-<svg width="400" height="100" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Gradient Definition -->
-  <defs>
-    <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" />
-      <stop offset="100%" stop-color="#06B6D4" />
-    </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-  </defs>
-
-  <!-- Icon: Abstract Hexagon with Agent Node -->
-  <g transform="translate(10, 10)">
-    <path d="M40 5L75 25V65L40 85L5 65V25L40 5Z" stroke="url(#logo-gradient)" stroke-width="3" fill="none" opacity="0.3" />
-    <path d="M40 15L65 30V60L40 75L15 60V30L40 15Z" fill="url(#logo-gradient)" filter="url(#glow)" />
-    <!-- Agent Node Dot -->
-    <circle cx="40" cy="45" r="8" fill="white" />
-    <circle cx="40" cy="45" r="12" stroke="white" stroke-width="1" opacity="0.5" />
-    <!-- Radiating Lines -->
-    <line x1="40" y1="45" x2="40" y2="25" stroke="white" stroke-width="2" stroke-linecap="round" />
-    <line x1="40" y1="45" x2="57" y2="55" stroke="white" stroke-width="2" stroke-linecap="round" />
-    <line x1="40" y1="45" x2="23" y2="55" stroke="white" stroke-width="2" stroke-linecap="round" />
-  </g>
-
-  <!-- Text: Open Agent Manager -->
-  <text x="100" y="62" fill="white" style="font-family: 'Inter', system-ui, sans-serif; font-weight: 800; font-size: 32px; letter-spacing: -0.05em;">
-    OPEN<tspan fill="url(#logo-gradient)">AGENT</tspan>MANAGER
-  </text>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1024 1024"
+>
+    <!-- Background for the app icon, providing good contrast -->
+    <rect width="1024" height="1024" rx="220" fill="#09090b" />
+    
+    <!-- Minimalist Terminal Logomark -->
+    <g fill="none" stroke="#8b84ff" stroke-width="80" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="150" y="250" width="724" height="524" rx="120" />
+        <path d="M 320 400 L 480 512 L 320 624" />
+        <line x1="560" y1="624" x2="700" y2="624" stroke-width="80" />
+    </g>
 </svg>

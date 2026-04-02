@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Circle } from "lucide-react";
+import { Logo } from "./Logo";
 
 function StarField() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -145,7 +146,8 @@ export function Hero() {
                         <span className="text-xs md:text-sm font-medium text-accent-foreground/60 uppercase tracking-[0.2em]">Desktop App for macOS</span>
                     </motion.div>
 
-                    <motion.div custom={1} variants={fadeUpVariants} initial="hidden" animate="visible">
+                    <motion.div custom={1} variants={fadeUpVariants} initial="hidden" animate="visible" className="flex flex-col items-center">
+                        <Logo className="w-24 h-24 md:w-32 md:h-32 mb-6" />
                         <h1 className="text-5xl sm:text-7xl md:text-8xl font-black mb-8 md:mb-10 tracking-tight leading-[1.1] text-foreground">
                             Open Agent
                             <br />

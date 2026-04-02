@@ -143,7 +143,7 @@ export function Hero() {
                         className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/[0.05] border border-accent/[0.1] mb-8 md:mb-12"
                     >
                         <Circle className="h-2 w-2 fill-accent animate-pulse" />
-                        <span className="text-xs md:text-sm font-medium text-accent-foreground/60 uppercase tracking-[0.2em]">Desktop App for macOS</span>
+                        <span className="text-xs md:text-sm font-medium text-accent-foreground/60 uppercase tracking-[0.2em]">Desktop App for macOS, Windows & Linux</span>
                     </motion.div>
 
                     <motion.div custom={1} variants={fadeUpVariants} initial="hidden" animate="visible" className="flex flex-col items-center">
@@ -159,8 +159,16 @@ export function Hero() {
 
                     <motion.div custom={2} variants={fadeUpVariants} initial="hidden" animate="visible">
                         <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed font-light tracking-wide max-w-2xl mx-auto">
-                            The ultimate desktop terminal for parallel Claude Code sessions. Manage projects
-                            with drag-and-drop prompts, task boards, and remote access via CMDOP&nbsp;SDK&nbsp;or&nbsp;SSH.
+                            Desktop terminal for parallel AI coding agent sessions.
+                            Projects on the left, terminals on the right.
+                            Connect local, SSH, or{' '}
+                            <span className="relative inline-block group">
+                                <span className="border-b border-dotted border-muted-foreground/50 cursor-help">CMDOP</span>
+                                <span className="pointer-events-none group-hover:pointer-events-auto absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 px-4 py-3 rounded-xl bg-card border border-border text-sm text-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-lg z-50 text-left font-normal tracking-normal">
+                                    CMDOP is a secure tunneling protocol for remote agent access — no VPN or port forwarding needed.{' '}
+                                    <a href="https://cmdop.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">cmdop.com</a>
+                                </span>
+                            </span>.
                         </p>
                     </motion.div>
 
@@ -172,7 +180,7 @@ export function Hero() {
                         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4"
                     >
                         <button className="w-full sm:w-auto bg-accent text-accent-foreground px-10 py-4 rounded-2xl shadow-xl hover:bg-accent/90 transition-all duration-500 hover:shadow-accent/40 font-bold text-lg hover:-translate-y-1">
-                            Download for macOS
+                            Download App
                         </button>
                         <button className="w-full sm:w-auto bg-card/50 backdrop-blur-sm border border-border text-foreground px-10 py-4 rounded-2xl shadow-xl hover:bg-muted transition-all duration-500 font-bold text-lg hover:-translate-y-1">
                             Documentation

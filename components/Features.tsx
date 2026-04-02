@@ -1,39 +1,34 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { Layers, Smartphone, Terminal as TerminalIcon, FolderTree, GripVertical, ListChecks } from "lucide-react";
+import { Layers, Globe, Terminal as TerminalIcon, FolderTree, GripVertical } from "lucide-react";
 
 const features = [
     {
+        icon: <FolderTree className="w-8 h-8" />,
+        title: "Project Sidebar",
+        description: "All your projects in a list on the left. Open a project — its terminals appear on the right. Import, archive, reorder."
+    },
+    {
         icon: <Layers className="w-8 h-8" />,
         title: "Parallel Sessions",
-        description: "Run multiple Claude Code agents simultaneously. Tabbed interface with split-views and per-project environment variables."
+        description: "Run multiple AI coding agent sessions at once. Each project can have its own set of terminal tabs running side by side."
     },
     {
         icon: <TerminalIcon className="w-8 h-8" />,
         title: "Real Terminal",
-        description: "True PTY processes, not a headless wrapper. Full interactive terminal with GPU-accelerated rendering."
-    },
-    {
-        icon: <FolderTree className="w-8 h-8" />,
-        title: "Project Manager",
-        description: "Sidebar with project tree, import projects, archive inactive ones. Environment variables and prompt templates per project."
+        description: "True PTY terminal, not a wrapper. Full interactive shell with GPU-accelerated rendering."
     },
     {
         icon: <GripVertical className="w-8 h-8" />,
-        title: "Drag & Drop Prompts",
-        description: "Create reusable prompt templates and drag them into the active terminal. Reorder your prompt queue with dnd-kit."
+        title: "Prompt Queue",
+        description: "Draft prompts per project. Drag and drop to reorder, then send to the active terminal when ready."
     },
     {
-        icon: <ListChecks className="w-8 h-8" />,
-        title: "Task Boards",
-        description: "Built-in task cards per project with todo, in-progress, and done statuses. Track your agent work alongside the terminal."
+        icon: <Globe className="w-8 h-8" />,
+        title: "Local, SSH, or CMDOP",
+        description: "Work locally or connect to remote machines via SSH. Use CMDOP for secure tunneling without VPN or port forwarding."
     },
-    {
-        icon: <Smartphone className="w-8 h-8" />,
-        title: "Remote Access",
-        description: "CMDOP SDK and SSH server support. Access your agents from your phone via secure WebSocket tunneling."
-    }
 ];
 
 export function Features() {
@@ -41,9 +36,9 @@ export function Features() {
         <section id="features" className="py-24 bg-background/50">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-black mb-4">Power to your agents</h2>
+                    <h2 className="text-3xl md:text-5xl font-black mb-4">What it does</h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                        Everything you need to manage parallel Claude Code sessions from a single desktop app.
+                        No bloat, just what you need: projects, terminals, and prompt drafts.
                     </p>
                 </div>
 

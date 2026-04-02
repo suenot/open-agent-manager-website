@@ -12,6 +12,7 @@ export function Navbar() {
                 <Link href="/" className="flex items-center gap-3 group">
                     <Logo className="w-10 h-10 group-hover:scale-110 transition-transform" />
                     <span className="text-xl font-black tracking-tighter">Open Agent Manager</span>
+                    <span className="text-xs font-mono text-muted-foreground/60 ml-1 mt-0.5">v{process.env.NEXT_PUBLIC_APP_VERSION}</span>
                 </Link>
 
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
@@ -22,7 +23,7 @@ export function Navbar() {
 
                 <div className="flex items-center gap-4">
                     <Link
-                        href="https://github.com/suenot/cmdop-agent-manager"
+                        href="https://github.com/suenot/open-agent-manager-workspace"
                         target="_blank"
                         className="p-2.5 rounded-xl bg-muted/50 hover:bg-muted transition-colors"
                     >

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Open Agent Manager — Parallel Claude Code Sessions",
-    description: "Desktop app for parallel Claude Code sessions with project management, drag-and-drop prompts, task boards, and remote access via CMDOP SDK or SSH.",
+    title: "Open Agent Manager — Parallel AI Coding Agent Sessions",
+    description: "Desktop terminal for parallel AI coding agent sessions. Projects on the left, terminals on the right. Connect local, SSH, or CMDOP.",
 };
 
 export default function RootLayout({

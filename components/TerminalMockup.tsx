@@ -15,7 +15,7 @@ export function TerminalMockup() {
                 <div className="rounded-xl overflow-hidden">
                     <img
                         src="/app-screenshot.png"
-                        alt="Open Agent Manager — parallel Claude Code sessions with project sidebar, terminal tabs, and live agent output"
+                        alt="Open Agent Manager — project sidebar on the left, terminal sessions on the right"
                         className="w-full h-auto"
                     />
                 </div>

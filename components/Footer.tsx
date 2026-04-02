@@ -33,7 +33,7 @@ export function Footer() {
                             </span>
                         </Link>
                         <p className="text-muted-foreground text-lg leading-relaxed max-w-sm">
-                            Desktop app for managing parallel Claude Code sessions with project organization, drag-and-drop prompts, and remote access.
+                            Desktop terminal for parallel AI coding agent sessions. Projects, terminals, and prompt drafts — nothing more.
                         </p>
                         <div className="flex items-center gap-4">
                             <a href="https://t.me/suenot" className="w-12 h-12 rounded-2xl bg-muted/50 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-all duration-300 group shadow-sm border border-border/50">
@@ -54,7 +54,7 @@ export function Footer() {
                         <div className="flex flex-col gap-4">
                             <h4 className="text-sm font-black uppercase tracking-[0.2em] text-foreground">Resources</h4>
                             <a href="#" className="hover:text-accent transition-colors">Documentation</a>
-                            <a href="https://github.com/suenot/cmdop-agent-manager" className="hover:text-accent transition-colors">GitHub</a>
+                            <a href="https://github.com/suenot/open-agent-manager-workspace" className="hover:text-accent transition-colors">GitHub</a>
                         </div>
                     </div>
                 </div>
